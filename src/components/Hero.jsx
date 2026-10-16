@@ -4,11 +4,12 @@ export default function Hero() {
   return (
     <section className="hero" id="home">
       <div className="wrap hero__inner">
-        <h1 className="hero__title">
-          <span className="hero__jolly">jolly</span>
-          <span className="hero__world">World</span>
-        </h1>
-        <p className="hero__lead">
+          <h1 className="hero__title text-center md:text-left" style={{'textAlign': 'center'}}>
+              <span className="hero__jolly"> jolly</span>
+              <span className="hero__world">World</span>
+          </h1>
+
+          <p className="hero__lead">
             {SITE.tagline}
         </p>
         <div className="hero__actions">
