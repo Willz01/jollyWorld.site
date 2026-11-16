@@ -1,8 +1,10 @@
 import { SITE } from '../data/site'
+import HotelOutline from './HotelOutline'
 
 export default function Hero() {
   return (
     <section className="hero" id="home">
+      <HotelOutline />
       <div className="wrap hero__inner">
           <h1 className="hero__title text-center md:text-left" style={{'textAlign': 'center'}}>
               <span className="hero__jolly"> jolly</span>

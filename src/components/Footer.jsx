@@ -1,8 +1,11 @@
 import { SITE } from '../data/site'
+import HotelOutline from './HotelOutline'
+import Sparkle from './Sparkle'
 
 export default function Footer() {
   return (
     <footer className="footer">
+      <HotelOutline variant="footer" />
       <div className="wrap footer__grid">
         <div>
           <p className="footer__brand">jollyWorld</p>
@@ -25,9 +28,22 @@ export default function Footer() {
           </ul>
         </div>
       </div>
+      <div className="wrap">
+        <div className="mark">
+          <Sparkle className="spark mark__spark" />
+          <p className="mark__word" aria-hidden="true">jolly<span>World</span></p>
+          <div className="mark__row">
+            <p>Hotel and bar · Odiok Itam, Uyo</p>
+            <a className="btn btn--gold btn--sm" href="#home">Back to top ↑</a>
+          </div>
+        </div>
+      </div>
       <div className="wrap footer__bottom">
         <p>
-          © <a href={SITE.credit.url} target="_blank" rel="noopener noreferrer">{SITE.credit.label}</a>
+          © {new Date().getFullYear()} jollyWorld. All rights reserved.
+          <span className="footer__credit">
+            Website by <a href={SITE.credit.url} target="_blank" rel="noopener noreferrer">Wills Ekanem</a>
+          </span>
         </p>
       </div>
     </footer>
